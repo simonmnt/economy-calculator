@@ -44,7 +44,7 @@ function buildUIArray() {
         const priceReference = averageConsumptionValue * SPPriceValue;
         const finalPrice = ((priceReference * kilo) / 100).toFixed(2);
 
-        SPCell.innerText = finalPrice
+        SPCell.innerText = `${finalPrice}€`
         SP95Column.append(SPCell)
 
         return finalPrice;
@@ -57,7 +57,7 @@ function buildUIArray() {
         const priceReference = (averageConsumptionValue * 1.2) * E85PriceValue;
         const finalPrice = ((priceReference * kilo) / 100).toFixed(2);
 
-        E85Cell.innerText = finalPrice;
+        E85Cell.innerText = `${finalPrice}€`;
         E85Column.append(E85Cell);
 
         return finalPrice;
@@ -66,7 +66,7 @@ function buildUIArray() {
     // Create economy column
     SPValues.map((value, i) => {
         const economyCell = document.createElement('div');
-        economyCell.innerText = (value - E85Values[i]).toFixed(2);
+        economyCell.innerText = `${(value - E85Values[i]).toFixed(2)}€`;
 
         economyColumn.append(economyCell)
 
