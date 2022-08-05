@@ -1,4 +1,14 @@
-body {
-    background: red;
-    color: yellow;
+.economy-container {
+    display: flex;
+    padding-top: 64px;
+
+    .column {
+        &:not(:last-child) {
+            margin-right: 32px;
+        }
+    }
+
+    .header-column {
+        background-color: lightgray;
+    }
 }
