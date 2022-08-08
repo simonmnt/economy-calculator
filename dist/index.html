@@ -1,33 +1,90 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-
-  <title>Vite Build</title>
-  <script type="module" crossorigin src="./index0fe394a1.js"></script>
-  <link rel="stylesheet" href="./indexa85b5681.css">
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    
+    <title>Vite Build</title>
+  <script type="module" crossorigin src="/indexf1978379.js"></script>
+  <link rel="stylesheet" href="/indexa85b5681.css">
 </head>
 <body>
 <h1 class="header">Calculateur d'économies</h1>
 
 <div class="input-group">
-  <label for="sp_price">Prix SP95/98</label>
-  <input type="number" id="sp_price" value="1.895">
+    <label for="sp_price">Prix SP95/98</label>
+    <input type="number" id="sp_price" value="1.895">
 </div>
 
 <div class="input-group">
-  <label for="e85_price">Prix E85</label>
-  <input type="number" id="e85_price" value="0.712">
+    <label for="e85_price">Prix E85</label>
+    <input type="number" id="e85_price" value="0.712">
 </div>
 
 <div class="input-group">
-  <label for="consommation">Consommation</label>
-  <input type="number" id="consommation" value="6.5">
+    <label for="consommation">Consommation</label>
+    <input type="number" id="consommation" value="6.5">
 </div>
 
-<div class="economy-container"></div>
+<div class="pricingtable-row m-b30 p-lr15 no-col-gap">
+    <div class="row">
+        <div class="col-sm-6 col-md-6 col-lg-3">
+            <div class="pricingtable-wrapper">
+                <div class="pricingtable-inner">
+                    <div class="pricingtable-title">
+                        <h2>Kilométrages</h2>
+                    </div>
+
+                    <ul class="pricingtable-features">
+                        <li>100 km</li>
+                        <li>500 km</li>
+                        <li>1000 km</li>
+                        <li>5000 km</li>
+                        <li>10000 km</li>
+                        <li>15000 km</li>
+                        <li>20000 km</li>
+                        <li>25000 km</li>
+                        <li>30000 km</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-3">
+            <div class="pricingtable-wrapper">
+                <div class="pricingtable-inner pricingtable">
+                    <div class="pricingtable-title">
+                        <h2>Coût SP</h2>
+                    </div>
+
+                    <ul class="pricingtable-features sp95-column"></ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-3">
+            <div class="pricingtable-wrapper">
+                <div class="pricingtable-inner">
+                    <div class="pricingtable-title">
+                        <h2>Coût E85</h2>
+                    </div>
+
+                    <ul class="pricingtable-features e85-column"></ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-3">
+            <div class="pricingtable-wrapper">
+                <div class="pricingtable-inner">
+                    <div class="pricingtable-title">
+                        <h2>Économies</h2>
+                    </div>
+
+                    <ul class="pricingtable-features economy-column"></ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 
 </body>
